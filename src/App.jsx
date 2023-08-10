@@ -25,9 +25,9 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className="app">
-          <Sidebar isSidebar={isSidebar} />
-          <main className="content">
+        <div style={{display:"flex"}} className="app">
+          <Sidebar  isSidebar={isSidebar} />
+          <main style={{marginLeft:"20%"}} className="content">
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
